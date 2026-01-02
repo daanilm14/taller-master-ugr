@@ -1,0 +1,3 @@
+Nombre: Daniel Lozano Moya
+Lenguaje: Python
+Motivo: Aprender sobre la configuración y gestión de proyectos en git.
