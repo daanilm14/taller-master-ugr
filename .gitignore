@@ -158,3 +158,16 @@ NOTES.md
 *.tar.gz
 *.rar
 *.7z
+
+
+# === SECCIÓN DE SEGURIDAD ===
+.env
+.env.*
+*.pem
+*.key
+*.p12
+id_rsa
+secrets/
+credentials.json
+# ============================
+
