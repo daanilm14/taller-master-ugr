@@ -1,0 +1,160 @@
+# Git Training Repository - .gitignore
+
+# ==============================================================================
+# INSTRUCTOR FILES - Not for trainees
+# ==============================================================================
+# Model specification file containing instructor notes and prompts
+MODEL_SPEC.MD
+SUMMARY.md
+INSTRUCTOR_GUIDE.md
+
+# ==============================================================================
+# IDE and Editor Files
+# ==============================================================================
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs (IntelliJ, PyCharm, WebStorm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ==============================================================================
+# Operating System Files
+# ==============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ==============================================================================
+# Temporary Files
+# ==============================================================================
+*.tmp
+*.temp
+*.log
+*.bak
+*.backup
+*.old
+
+# ==============================================================================
+# GPG and Security Files (Important for Master of Universe level)
+# ==============================================================================
+# Private keys should NEVER be committed
+*.key
+*.pem
+*.p12
+*.pfx
+*_rsa
+*_dsa
+*_ecdsa
+*_ed25519
+
+# GPG private keys
+secring.gpg
+*.gpg
+!*.asc  # Allow public keys (.asc files)
+
+# SSH private keys
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+
+# ==============================================================================
+# Credentials and Secrets
+# ==============================================================================
+# Environment files
+.env
+.env.local
+.env.*.local
+*.env
+
+# Configuration with secrets
+config/secrets.yml
+config/database.yml
+credentials.json
+secrets.json
+
+# ==============================================================================
+# Build and Dependency Directories
+# ==============================================================================
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+ENV/
+.venv
+
+# Java
+target/
+*.class
+*.jar
+*.war
+
+# ==============================================================================
+# Git Exercise Artifacts (Student work)
+# ==============================================================================
+# Allow students to keep local test files without committing
+test-*.txt
+practice-*.txt
+exercise-*.txt
+my-*.txt
+hello.txt
+
+# Local hook test files
+hooks-test/
+hook-output.log
+
+# ==============================================================================
+# Documentation Drafts
+# ==============================================================================
+# Draft or work-in-progress documentation
+*-draft.md
+*-WIP.md
+*-TODO.md
+NOTES.md
+
+# ==============================================================================
+# Compressed Files (unless specifically needed)
+# ==============================================================================
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z

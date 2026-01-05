@@ -1,0 +1,136 @@
+# CODEOWNERS File for Git Training Repository
+#
+# This file defines code ownership and automatic review request assignments.
+# Each line is a file pattern followed by one or more owners.
+#
+# Code owners are automatically requested for review when someone opens a pull request
+# that modifies files they own. When branch protection requires code owner reviews,
+# the pull request cannot be merged until a code owner approves it.
+#
+# IMPORTANT: This file protects EXERCISE BRANCHES only, not student work.
+# Trainees work in their own forks or outcome branches without restrictions.
+# Code ownership applies when changes are proposed TO the protected exercise branches.
+#
+# More information: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# ==============================================================================
+# TRAINING WORKFLOW
+# ==============================================================================
+# Trainees should:
+# 1. Fork this repository OR
+# 2. Create outcome branches (group-X-outcomes/*) OR
+# 3. Work in their own cloned repository locally
+#
+# They can work freely without restrictions.
+# Code ownership ONLY applies when submitting PRs to protected exercise branches.
+#
+# ==============================================================================
+
+# ==============================================================================
+# GLOBAL OWNERSHIP (Only for non-exercise files)
+# ==============================================================================
+# Repository documentation and configuration files
+# These don't affect trainee work, only repository maintenance
+/CODEOWNERS @daanilm14
+/MODEL_SPEC.MD @daanilm14
+/EVALUATION_CRITERIA.md @daanilm14
+/INSTRUCTOR_GUIDE.md @daanilm14
+/SUMMARY.md @daanilm14
+
+# ==============================================================================
+# EXERCISE BRANCH PROTECTION
+# ==============================================================================
+# These rules protect the EXERCISE BRANCHES from unauthorized modifications.
+# Trainees should NOT push directly to these branches.
+# They work in their own forks/branches and can submit PRs if needed.
+#
+# This creates the "discovery moment" during the Master level exercise.
+
+# ==============================================================================
+# MASTER LEVEL - Advanced Branching Strategies Exercise
+# ==============================================================================
+# ⚠️ CRITICAL LEARNING MOMENT:
+#
+# When trainees implement the "Advanced branching strategies" exercise (Git Flow,
+# GitHub Flow), they will discover that ANY attempt to modify the master branch
+# via Pull Request requires code owner approval.
+#
+# This is intentional and creates authentic learning:
+# 1. Trainees implement Git Flow/GitHub Flow in their own fork/branch
+# 2. If they try to submit a PR to the master branch, they discover code ownership
+# 3. They must research CODEOWNERS and understand its role in workflows
+# 4. They learn how branch protection + code ownership work together
+# 5. They understand professional Git workflows include mandatory reviews
+#
+# The CODEOWNERS file is NOT mentioned in exercise instructions - discovery is key!
+
+# Any changes to master branch exercise content require expert review
+# This applies to PRs targeting the master branch, not trainee work
+# Trainees can freely work in their forks without any restrictions
+
+# Any changes to master branch exercise content require expert review
+# This applies to PRs targeting the master branch, not trainee work
+# Trainees can freely work in their forks without any restrictions
+
+# Protect the master branch README and exercise content
+# Note: Uses branch-specific path syntax that GitHub recognizes
+[main]
+* @daanilm14
+
+# ==============================================================================
+# ALL OTHER BRANCHES ARE OPEN
+# ==============================================================================
+# Trainees can freely push to:
+# - Their own forks (always open)
+# - Outcome branches they create (group-X-outcomes/*)
+# - Feature branches in their workflow
+# - Any branch except the protected exercise branches
+#
+# No code ownership restrictions apply to trainee work areas.
+# The discovery happens ONLY when/if they try to modify exercise branches.
+
+# ==============================================================================
+# LEARNING OBJECTIVE - How This Works
+# ==============================================================================
+#
+# SCENARIO 1: Trainee works in fork (RECOMMENDED)
+# - Trainee forks the repository
+# - Works freely in their fork without restrictions
+# - Completes all exercises independently
+# - If they want to contribute back, they learn about code ownership via PR
+#
+# SCENARIO 2: Trainee works in outcome branches (ALTERNATIVE)
+# - Trainee clones the repository (read access)
+# - Creates group-X-outcomes/* branches locally
+# - Works without restrictions
+# - Pushes outcome branches (no code ownership applied)
+# - Exercise branches remain protected
+#
+# SCENARIO 3: Advanced trainees try to improve exercise content
+# - Trainee finds issue in master branch exercise
+# - Creates PR to fix/improve it
+# - Discovers code ownership requirement
+# - Learns about contribution workflows in managed repositories
+#
+# The "discovery moment" is optional and natural - it happens when trainees
+# interact with protected branches, which teaches real-world collaboration.
+#
+# ==============================================================================
+
+# ==============================================================================
+# TEAMS REFERENCE (Optional)
+# ==============================================================================
+#
+# If you want to create teams for code review automation:
+#
+# @daanilm14 - Repository owner and lead instructor (required)
+#
+# Optional teams (can be created later):
+# @git-flow-experts - Review branching strategy implementations
+# @security-team - Review security-related changes
+# @governance-team - Review repository policy changes
+#
+# Note: Without these teams, @daanilm14 will be the only required reviewer.
+# This is sufficient for the training - teams can be added later if needed.
+#
+# ==============================================================================
