@@ -1,4 +1,5 @@
 # taller-master-ugr
+
 A Git Training Repository for Master Students at UGR
 
 This repository is designed to help master students develop professional Git skills through hands-on exercises organized by difficulty level.
@@ -252,4 +253,5 @@ Created for Git Technology training at Universidad de Granada (UGR).
 ---
 
 **Ready to begin?** Choose your level and checkout the corresponding branch to start learning! 🚀
+
 
